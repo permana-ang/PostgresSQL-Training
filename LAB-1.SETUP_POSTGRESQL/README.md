@@ -5,7 +5,7 @@
 ## 1.3 Setting Environment Variable
 
 
-## 1.1 Instalasi
+# 1.1 Instalasi
 
 Jalankan perintah berikut sebagai user **root**:
 
@@ -48,6 +48,23 @@ ls /etc/postgresql/17/main/
 tail -f /var/log/postgresql/postgresql-17-main.log
 ````
 
+# 1.2 Akses Databases
+
+Masuk ke server linux dengan user postgres:
+
+```bash
+su - postgres
+````
+
+Koneksi ke cluster database dengan alat psql:
+```bash
+psql -d postgres -U postgres
+````
+
+Atur password user postgres yang ada di dalam cluster database, yaitu postgres:
+```bash
+ALTER USER postgres PASSWORD 'postgres';
+````
 
 
 
