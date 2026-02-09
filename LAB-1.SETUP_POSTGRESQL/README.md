@@ -20,11 +20,6 @@ sudo apt update```
 Instalasi PostgreSQL
 
 ```bash
-sudo apt -y install postgresql-17
+sudo apt -y install postgresql-17```
 
 
-
-Verifikasi setelah instalasi
-
-```bash
-systemctl status postgresql
