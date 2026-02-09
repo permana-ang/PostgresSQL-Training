@@ -3,20 +3,17 @@ LAB 1. SETUP POSTGRESQL
 1.2 Akses Databases
 1.3 Setting Environment Variable
 
-1.1 Instalasi
-Jalankan perintah berikut sebagai user root:
+## 1.1 Instalasi
 
-```sudo apt install curl ca-certificates
+Jalankan perintah berikut sebagai user **root**:
+
+```bash
+sudo apt install curl ca-certificates
 sudo install -d /usr/share/postgresql-common/pgdg
 sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail https://www.postgresql.org/media/keys/ACCC4CF8.asc
 . /etc/os-release
 sudo sh -c "echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
 sudo apt update
 
-# Instalasi PostgreSQL:
+# Instalasi PostgreSQL
 sudo apt -y install postgresql-17
-
-
-Verifikasi setelah instalasi:
-
-```systemctl status postgresql
