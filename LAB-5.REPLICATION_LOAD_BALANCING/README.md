@@ -296,7 +296,7 @@ Jalankan restart cluster untuk menerapkan konfigurasi:
 pg_ctl -D /var/lib/postgresql/17/mydb/ -l /var/log/postgresql/mydb.log restart
 ```
 
-5.4 Load Balancing
+# 5.4 Load Balancing
 
 Install load balancer postgreSQL yaitu pgpool2:
 ```bash
